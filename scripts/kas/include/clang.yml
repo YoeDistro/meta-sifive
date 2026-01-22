@@ -1,19 +1,10 @@
 header:
   version: 14
 
-repos:
-
-  meta-clang:
-    url: https://github.com/kraj/meta-clang.git
-    commit: cf20f8bd1366d41094c945597b95dd746e87b871
-    layers:
-      .:
-
 local_conf_header:
 
   clang: |
 
-    TOOLCHAIN = "clang"
-    TOOLCHAIN:pn-opensbi-sifive = "gcc"
-
-    CLANGSDK = "1"
+    PREFERRED_TOOLCHAIN_TARGET = "clang"
+    # PREFERRED_TOOLCHAIN_NATIVE = "clang"
+    # PREFERRED_TOOLCHAIN_SDK = "clang"
