@@ -38,7 +38,7 @@ also provide a Kas yaml to build this machine.
 
 This layer doesn't define new distributions.
 BSPs are validated with the `core-image-minimal` and the `core-image-sato`
-provides by the `OE-core` layer.
+provided by the `OE-core` layer.
 
 ## Build images
 
@@ -79,7 +79,7 @@ kas shell ./meta-sifive/scripts/kas/qemuriscv64.yml -c "runqemu snapshot slirp s
 
 ## Execute runtime tests
 
-The OpenEmbedded/Yocto framework provides also provides tools to implement and to run tests.
+The OpenEmbedded/Yocto framework also provides tools to implement and to run tests.
 
 These tests can be executed on all supported targets, using the following commands:
 
@@ -176,7 +176,7 @@ To quit screen, hit `Ctrl - A` followed by `\` symbol. Finally agree to
 terminate all windows by typing `y`.
 
 You can login with `root` account. The password is `sifive`. __We strongly
-recommend to change the default password  for the root account on the first
+recommend to change the default password for the root account on the first
 boot before you connect it to the Internet.__
 
 ### Connecting Using SSH
@@ -231,7 +231,7 @@ sync
 
 ### NBD (Network Block Device) rootfs
 
-This is an experimantal feature currently only available on SiFive HiFive
+This is an experimental feature currently only available on SiFive HiFive
 Unmatched board. This allow sharing a block device over the network. This is
 not an extensive guide into NBD, but a quick start.
 
@@ -278,13 +278,6 @@ free space, add a COW layer to make it writable and send "naked" filesystem
 
 `nbdkit` has a number of plugins and filters allowing various ways how to share
 disk images over the network.
-
-## Run Tensorflow Lite demo
-
-```
-cd /usr/share/tensorflow/lite/examples/python/
-python3 python3 mnist.py
-```
 
 ## Contributions & Feedback
 
