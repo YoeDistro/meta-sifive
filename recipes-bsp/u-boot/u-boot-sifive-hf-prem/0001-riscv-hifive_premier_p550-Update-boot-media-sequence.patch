@@ -1,7 +1,7 @@
-From c08336ec29872d92aac49bd2b07efca823dc9215 Mon Sep 17 00:00:00 2001
+From 6b1fbfc30ad1560d88bc698c2121843f74c0a629 Mon Sep 17 00:00:00 2001
 From: Pritesh Patel <pritesh.patel@einfochips.com>
 Date: Thu, 6 Mar 2025 11:27:29 +0000
-Subject: [PATCH] riscv: hifive_premier_p550: Update boot media sequence
+Subject: [PATCH 1/2] riscv: hifive_premier_p550: Update boot media sequence
 
 Boot Media scanning sequence is as below:
 SD-CARD->USB->NVMe->SATA->eMMC
@@ -27,5 +27,5 @@ index de30a410a8..9961138f16 100644
  #undef CONFIG_BOOTCOMMAND
  #define CONFIG_BOOTCOMMAND \
 -- 
-2.25.1
+2.34.1
 
