@@ -9,7 +9,8 @@ SRCREV = "EIC7X-2025.01"
 PATCHTOOL = "git"
 
 SRC_URI = "git://github.com/eswincomputing/u-boot.git;protocol=https;branch=u-boot-2024.01-EIC7X \
-           file://0001-riscv-hifive_premier_p550-Update-boot-media-sequence.patch"
+           file://0001-riscv-hifive_premier_p550-Update-boot-media-sequence.patch \
+           file://0002-riscv-cpu-eic7700-cache-Correct-cache-flush-size.patch"
 
 do_deploy:append () {
 	install -m 755 ${B}/u-boot.dtb ${DEPLOYDIR}
